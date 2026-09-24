@@ -13,7 +13,7 @@ services:
       # Writable state lives on a persistent bind mount, and on a *different* volume from any
       # read-only data mount, so the two settings stay independent rather than load-bearing
       # on each other.
-      - /opt/data/monitoring:/state
+      - ./state:/state
     # the container's bound port IS the host port, so a ports: mapping would be a no-op
     network_mode: host
     user: 1000:1000
