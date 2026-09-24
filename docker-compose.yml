@@ -1,0 +1,26 @@
+services:
+  monitor-mcp:
+    build:
+      context: .
+    image: monitor-mcp:latest
+    environment:
+      PORT: 7776
+      HOST: 0.0.0.0
+      MONITOR_DB: /state/monitor.db
+      MONITOR_TZ: Asia/Manila
+    volumes:
+      # Writable state lives on a persistent bind mount, and on a *different* volume from any
+      # read-only data mount, so the two settings stay independent rather than load-bearing
+      # on each other.
+      - /opt/data/monitoring:/state
+    # the container's bound port IS the host port, so a ports: mapping would be a no-op
+    network_mode: host
+    user: 1000:1000
+    # this server only reads and writes a file; it needs no capabilities at all
+    cap_drop:
+      - ALL
+    security_opt:
+      - 'no-new-privileges:true'
+    privileged: false
+    cpus: 0.5
+    mem_limit: 256mb
