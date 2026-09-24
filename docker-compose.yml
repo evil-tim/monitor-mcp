@@ -2,6 +2,7 @@ services:
   monitor-mcp:
     build:
       context: .
+      network: host
     image: monitor-mcp:latest
     environment:
       PORT: 7776
