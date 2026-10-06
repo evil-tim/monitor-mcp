@@ -147,8 +147,10 @@ way (page → registry) rather than being duplicated as prose in both. The slugs
 
 ## Open questions carried forward
 
-1. **`PH1` is unresolved.** Used as an entity in legacy rows 26 and 40 but not a recognisable code.
-   Seeded as `UNRESOLVED ... meaning not established`. Do not invent a company for it — ask.
+1. **`PH1` — resolved 2026-10-06.** Used as an entity in legacy rows 26 and 40 but not a
+   recognisable code; seeded initially as `UNRESOLVED ... meaning not established`. Operator
+   confirmed it is PH1 World Developers, Inc., Megawide's real-estate subsidiary (unlisted).
+   The seed was edited after the question was asked, not before it.
 2. **`ICTSI` vs `ICT`.** The registry's code and Libram's differ. Recorded in `entity.libram_code`.
 3. **`NGCP` is not PSE-listed** but the registry treats it as an entity. Kept, `feed='manual'`.
 4. **`review_by` on the 10 qualitative rows is a placeholder** (today + 180 days), not an operator

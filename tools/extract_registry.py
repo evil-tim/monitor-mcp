@@ -112,7 +112,7 @@ KNOWN = {
  "MWIDE": ("Megawide Construction Corporation", "MWIDE"), "NGCP": ("National Grid Corp. of the Philippines (unlisted)", None),
  "OGP": ("OceanaGold (Philippines), Inc.", "OGP"), "RCR": ("RL Commercial REIT, Inc.", "RCR"),
  "SCC": ("Semirara Mining and Power Corporation", "SCC"),
- "PH1": ("UNRESOLVED registry code \u2014 appears in rows 26 and 40, meaning not established", None),
+ "PH1": ("PH1 World Developers, Inc. (Megawide real-estate arm; unlisted)", None),  # resolved 2026-10-06
 }
 entities = []
 for tk in sorted(ents):

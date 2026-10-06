@@ -111,8 +111,9 @@ has no Docker daemon.
 
 Carried from `tools/EXTRACTION_REPORT.md`:
 
-1. `PH1` is used as an entity in legacy rows 26 and 40 but is not a recognisable code. Seeded as
-   unresolved rather than guessed.
+1. `PH1` was used as an entity in legacy rows 26 and 40 but was not a recognisable code; seeded as
+   unresolved rather than guessed. **Resolved 2026-10-06:** PH1 World Developers, Inc., Megawide's
+   real-estate subsidiary (unlisted).
 2. The registry says `ICTSI`; Libram says `ICT`. Recorded in `entity.libram_code`.
 3. `NGCP` is not PSE-listed but the registry treats it as an entity.
 4. `review_by` on the 10 qualitative rows is a placeholder (today + 180 days), not an operator
