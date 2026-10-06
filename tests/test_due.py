@@ -62,7 +62,7 @@ def test_overdue_days():
 
 def test_seeded_rows_start_never_read(con):
     rows = store.all_rows(con, now=NOW)
-    assert len(rows) == 40
+    assert len(rows) == 41
     assert {r["state"] for r in rows} == {models.NEVER_READ}
 
 

@@ -39,8 +39,10 @@
    provenance in the reader's head, which is why a trigger forbids it.
 3. **The seed is data applied through the same DDL the tools use.** A malformed seed row is
    rejected rather than loaded. If `seed()` raises, fix the row, do not bypass the constraint.
-4. **`PH1` is an unresolved code** appearing in legacy rows 26 and 40. It is seeded as
-   `UNRESOLVED` on purpose. Do not invent a company for it.
+4. **`PH1` was an unresolved code** appearing in legacy rows 26 and 40. Resolved 2026-10-06 by the
+   operator: PH1 World Developers, Inc., Megawide's real-estate subsidiary (unlisted). The
+   resolution came from the operator, not from an agent inferring one — keep that distinction,
+   since the point of the seed's `UNRESOLVED` marker was to force the question rather than guess.
 5. **The registry says `ICTSI`; Libram says `ICT`.** The mapping lives in `entity.libram_code`.
    Any future resolver must translate, not assume.
 6. **`uv run` wants a writable cache at runtime**, so the container entrypoint runs
